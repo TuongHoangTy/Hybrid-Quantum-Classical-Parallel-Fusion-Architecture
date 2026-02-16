@@ -13,6 +13,13 @@ This project proposes a novel **Parallel Fusion Hybrid QCNN (PF-HQCCNN)**. By in
 - **Barren Plateaus Immunity:** Utilizes a shallow ansatz ($L=2$) to maintain a polynomial gradient variance $\Omega(1/n^{1.5})$.
 - **Parameter Efficiency:** Achieves **92.2% test accuracy** on the MNIST dataset using only **7,746 parameters** (a 3.5x reduction compared to classical baselines).
 
+## 📦 Dataset
+The experiments in this repository are conducted on the **MNIST database of handwritten digits**. 
+
+- **Automated Download:** The provided PyTorch script uses `torchvision.datasets.MNIST` to download and process the dataset automatically into the `/Data` directory.
+- **Manual Download / Source:** If you wish to inspect the dataset manually, you can download the raw files from the official repository provided by Yann LeCun, Corinna Cortes, and Christopher J.C. Burges:
+  👉 [The MNIST Database (Official Link)](http://yann.lecun.com/exdb/mnist/)
+
 ## 📊 Experimental Results
 
 ### 1. Parameter Efficiency & Accuracy
